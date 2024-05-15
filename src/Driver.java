@@ -1,9 +1,10 @@
 public class Driver {
     public static void main(String[] args) throws Exception {
+        
         //first max heap to test resize
         MaxBinaryHeap test = new MaxBinaryHeap();
         
-        //requires two resets, tests insert
+        //requires two resizes, tests insert
         for (int i = 140; i > 0; i--) {
             test.insert(i);
         }
@@ -13,7 +14,7 @@ public class Driver {
         //second max heap to test other methods
         MaxBinaryHeap test2 = new MaxBinaryHeap();
 
-        //test error messages
+        //tests error messages
         System.out.println("\n");
         test2.extractMax();
         test2.display();
